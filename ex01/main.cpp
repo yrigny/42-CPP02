@@ -6,13 +6,13 @@
 /*   By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 15:08:05 by yrigny            #+#    #+#             */
-/*   Updated: 2024/07/08 15:09:49 by yrigny           ###   ########.fr       */
+/*   Updated: 2024/07/08 20:00:54 by yrigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Fixed.hpp"
 
-int main( void ) {
+int main(void) {
 
 	Fixed		a;
 	Fixed const	b(10);
