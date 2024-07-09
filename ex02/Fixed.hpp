@@ -6,7 +6,7 @@
 /*   By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/08 19:58:26 by yrigny            #+#    #+#             */
-/*   Updated: 2024/07/08 20:30:28 by yrigny           ###   ########.fr       */
+/*   Updated: 2024/07/09 17:20:48 by yrigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,24 +36,25 @@ class	Fixed
 		float	toFloat(void) const;
 		int		toInt(void) const;
 
-		int		operator>(const Fixed& other);
-		int		operator<(const Fixed& other);
-		int		operator>=(const Fixed& other);
-		int		operator<=(const Fixed& other);
-		int		operator==(const Fixed& other);
-		int		operator!=(const Fixed& other);
-		Fixed&	operator+(const Fixed& addend);
-		Fixed&	operator-(const Fixed& subtrahend);
-		Fixed&	operator*(const Fixed& multiplier);
-		Fixed&	operator/(const Fixed& divisor);
+		bool	operator>(const Fixed& other) const;
+		bool	operator<(const Fixed& other) const;
+		bool	operator>=(const Fixed& other) const;
+		bool	operator<=(const Fixed& other) const;
+		bool	operator==(const Fixed& other) const;
+		bool	operator!=(const Fixed& other) const;
+		float	operator+(const Fixed& addend) const;
+		float	operator-(const Fixed& subtrahend) const;
+		float	operator*(const Fixed& multiplier) const;
+		float	operator/(const Fixed& divisor) const;
 		Fixed&	operator++(void);
-		Fixed&	operator++(int);
+		Fixed	operator++(int);
 		Fixed&	operator--(void);
-		Fixed&	operator--(int);
+		Fixed	operator--(int);
 		
-		static Fixed&	min(const Fixed& a, const Fixed& b);
-		static Fixed&	max(const Fixed& a, const Fixed& b);
-		static Fixed&	max(Fixed& const a, Fixed& const b);
+		static Fixed&		min(Fixed& a, Fixed& b);
+		static const Fixed&	min(const Fixed& a, const Fixed& b);
+		static Fixed&		max(Fixed& a, Fixed& b);
+		static const Fixed&	max(const Fixed& a, const Fixed& b);
 };
 
 std::ostream&	operator<<(std::ostream& o, const Fixed& num_fp);
