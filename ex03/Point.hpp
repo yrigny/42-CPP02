@@ -6,7 +6,7 @@
 /*   By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/09 19:06:39 by yrigny            #+#    #+#             */
-/*   Updated: 2024/07/09 19:48:29 by yrigny           ###   ########.fr       */
+/*   Updated: 2024/07/10 14:42:44 by yrigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@ class Point
 		Point	operator=(const Point& src);
 		~Point(void);
 
-		const Fixed&	getX(void);
-		const Fixed&	getY(void);
+		const Fixed&	getX(void) const;
+		const Fixed&	getY(void) const;
 };
 
 bool	bsp(Point const a, Point const b, Point const c, Point const point);

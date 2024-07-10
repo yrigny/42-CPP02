@@ -6,7 +6,7 @@
 /*   By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/09 19:06:49 by yrigny            #+#    #+#             */
-/*   Updated: 2024/07/09 19:48:32 by yrigny           ###   ########.fr       */
+/*   Updated: 2024/07/10 14:42:57 by yrigny           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,10 +33,10 @@ Point::~Point(void) {
 	return;
 }
 
-const Fixed&	Point::getX(void) {
+const Fixed&	Point::getX(void) const {
 	return this->x;
 }
 
-const Fixed&	Point::getY(void) {
+const Fixed&	Point::getY(void) const {
 	return this->y;
 }

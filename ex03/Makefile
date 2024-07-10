@@ -6,7 +6,7 @@
 #    By: yrigny <yrigny@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/07/09 19:04:52 by yrigny            #+#    #+#              #
-#    Updated: 2024/07/09 19:10:50 by yrigny           ###   ########.fr        #
+#    Updated: 2024/07/10 15:09:17 by yrigny           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,7 @@ INCLUDE = Fixed.hpp Point.hpp
 
 OBJ = $(SRC:.cpp=.o)
 
-NAME = Fixed
+NAME = BSP
 
 GREEN = \033[1;32m
 
